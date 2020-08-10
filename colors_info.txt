@@ -1,0 +1,13 @@
+To load colors one option is to put these lines in the code:
+
+simpctable
+color=[!red,!green,!blue,!magenta,!orange,!cyan,!purple,!slategrey,!hotpink,!seagreen,!sienna,!violet,!navyblue,!skyblue,!darkgreen,!salmon,!yellow,!forestgreen,!firebrick,!royalblue,!turquoise,!lightgreen,!deeppink,!darkred]
+color=[color,color,color,color,color,color,color]
+ 
+
+And then when naming the plot, use:
+
+outfile='plot.ps'
+begplot,name=outfile,/color,/land
+
+plot,x,y,color=color[i]

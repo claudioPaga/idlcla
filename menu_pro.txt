@@ -1,0 +1,20 @@
+FILE: menu_pro.txt                           by claudio 10-gen-2005
+
+Lista dei programmi scritti while at Penn State
+
+lrpd_rec.pro		    Event (grades) reconstruction for LrPD frames.
+lrpd_bias_corr.pro	    Corrects the bias for a list of LrPD frames.
+			    When background is high the Bias subtraced on
+			    board is too low.  The correct bias should be
+			    the median value of the 20 pixel in the file
+			    headers.  This programs creates new fits files
+			    with the corrected bias
+lrpd_bias_plot.pro	    As above but it just makes plots of bias sub 
+			    and median of the header pixels, does not correct
+lrpd_bias_plot_man.pro	    As above, makes plots but the median value is not
+			    read from the header parameter but is actually
+			    calculated in the program getting rid of the
+			    pixels whose value is above 400 (they are probably
+			    SAA protons, and so they are not bias!)
+
+			    
